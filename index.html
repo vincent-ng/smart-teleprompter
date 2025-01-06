@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Smart Teleprompter</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="controls">
+        <textarea
+          id="input-text"
+          placeholder="Enter your text here..."
+          rows="5"
+        ></textarea>
+        <div class="buttons">
+          <button id="start-btn">Start</button>
+          <button id="stop-btn" disabled>Stop</button>
+          <div class="speed-control">
+            <label for="speed">Scroll Speed:</label>
+            <input type="range" id="speed" min="1" max="10" value="5" />
+          </div>
+        </div>
+      </div>
+      <div class="teleprompter">
+        <div id="text-display"></div>
+      </div>
+    </div>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
